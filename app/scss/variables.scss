@@ -29,33 +29,29 @@ $tv: ("min-width: 1367px");
 // tint=lighten, shade=darken, low&high=saturation, op=opacity.
 // shortcut "cr" => color: rgba(text-color, .5);
 // Ex $black-op: rgba($black, .3);
-$black: #000000;
-$blue: lightblue;
-$green__lime-green: #3dc644;
-$green__willow-brook: #E6E7CF;
-$green__jade-light: #00AA62;
-$green__jade-dark: #00bc6c;
+
+$blue__dark: #080d13;
+$blue__light: #0b1119;
+$grey__cinder: #242930;
+$grey__dark-gray: #afafaf;
+$grey__silver: #bdbdbd;
+$orange: #f99406;
+$orange__dark: #db8000;
+$orange__light: #f7a83a;
 $white: #ffffff;
+$yellow: #f59f26;
 
 // SCAFFOLDING
 $font-size-base: 18px;
-$line-height-base: em(30px);
-// Точно sans-serif? Вдруг в этот раз это не так
-$font-family-base: "Raleway", Arial, sans-serif;
-$font-family-secondary: "Firasans", Arial, sans-serif;
-$text-color-base: $black;
-// Не забудь изменить на твой вариант фона
-$body-bg: $blue;
+$line-height-base: em(24px);
+$font-family-base: "Roboto", Arial, sans-serif;
+$text-color-base: $grey__silver;
+$body-bg: $blue__light;
 
 // FONT WEIGHT
-$thin: 100;
-$extralight: 200;
 $light:300;
 $regular: 400;
-$medium: 500;
-$semibold: 600;
 $bold: 700;
-$extrabold: 800;
 $black: 900;
 
 // FUNCTIONS
@@ -103,9 +99,10 @@ $brand-default: rgba($blue, .5);
 // **Часто бывает вариацией уже известного цвета с opacity или rgba()
 // Ex: $btn-form-default-hover-bg-m
 // Дефолтная кнопка
-$btn-bg-default: $green__lime-green;
-$btn-bg-hover: $green__willow-brook;
-$btn-bg-active: $green__jade-dark;
+$btn-bg-default: $orange;
+$btn-bg-hover: $orange__light;
+$btn-bg-active: $orange__dark;
+
 $btn-text-color-default: $white;
 $btn-text-color-hover: $black;
 $btn-text-color-active: rgba($white, .3);

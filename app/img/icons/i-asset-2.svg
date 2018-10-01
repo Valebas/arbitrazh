@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68" height="61" viewBox="0 0 68 61">
+  <defs>
+    <style>
+      .a {
+        fill: #f99406;
+      }
+    </style>
+  </defs>
+  <title>asset-2</title>
+  <g>
+    <path class="a" d="M66,14.31V59H2V14.31H66m2-2H0V61H68V12.31Z"/>
+    <path class="a" d="M66,14.31V34.66H50.75v4.69H44.06V34.66H24.16v4.69H17.47V34.66H2V14.31H66m2-2H0V36.66H15.47v4.69H26.16V36.66H42.06v4.69H52.75V36.66H68V12.31Z"/>
+    <path class="a" d="M50.75,34.84v4.5H44.06v-4.5h6.69m-26.59,0v4.5H17.47v-4.5h6.69m28.59-2H42.06v8.5H52.75v-8.5Zm-26.59,0H15.47v8.5H26.16v-8.5Z"/>
+    <path class="a" d="M47.13,2v9.5H20.88V2H47.13m2-2H18.88V13.5H49.13V0Z"/>
+  </g>
+</svg>
