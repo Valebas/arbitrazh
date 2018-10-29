@@ -1,0 +1,166 @@
+$btn-bg-default: $orange;
+$btn-bg-hover: $orange__light;
+$btn-bg-active: $orange__dark;
+$btn-text-color-default: $white;
+$btn-text-color-hover: white;
+$btn-text-color-active: rgba(white, 0.6);
+$btn-padding: 19px 29px 19px;
+$btn-font-weight: $light;
+$btn-font-size: em(14px);
+$btn-border: none;
+$btn-border-radius: 0;
+$btn-box-shadow: none;
+
+// For additional buttons: info, price, form-send, order, comment etc.
+$btn-comment-bg-default: black;
+
+
+.form {
+  display: flex;
+  align-items: flex-start;
+
+  margin-top: 64px;
+  @media ($mobile) {
+    display: block;
+
+    margin-top: 195px;
+  }
+  @media ($md-400) {
+    display: block;
+
+    margin-top: 245px;
+  }
+  @media ($mobile-landscape) {
+  }
+  @media ($md-600) {
+    margin-top: 270px;
+  }
+  @media ($tablet) {
+    display: flex;
+
+    margin-top: 130px;
+  }
+  @media ($laptop) {
+    // align-items: stretch;
+    margin-top: 30px;
+  }
+  @media ($desktop) {
+  }
+  @media ($tv) {
+  }
+  &__input {
+    display: flex;
+
+    padding: 17px 140px 17px 27px;
+
+    text-align: left;
+
+    border: none;
+    @media ($mobile), ($md-400) {
+      display: block;
+
+      padding: 17px 26px 17px 28px;
+
+      width: 100%;
+
+      text-align: center;
+    }
+    @media ($mobile-landscape) {
+    }
+    @media ($tablet) {
+      width: 60%;
+
+      text-align: left;
+    }
+    @media ($laptop) {
+      line-height: 20px;
+    }
+    @media ($desktop) {
+    }
+    @media ($tv) {
+    }
+  }
+  &__btn {
+    // Если нужно растянуть кнопку на всю ширину (например, для мобильной версии) это можно сделать через flex
+    display: flex;
+
+    padding: $btn-padding;
+    // Работа со шрифтом
+
+    text-align: center;
+    color: $btn-text-color-default;
+    font-size: $btn-font-size;
+    font-weight: $btn-font-weight;
+    // flex-direction: row;
+    // justify-content: flex-end;
+    // display: inline-block;
+    letter-spacing: 0.7px;
+    // Тень
+    // box-shadow: $btn-box-shadow;
+    // text-shadow: $btn-text-shadow;
+    letter-spacing: 0.7px;
+    text-transform: none;    // Размеры кнопки лучше задавать через padding, чем через width & height
+    text-transform: none;
+    text-decoration: none;
+
+    background-color: $btn-bg-default;
+    // Если не нужны закругленные углы удалить border-radius
+    border: $btn-border;
+    border-radius: $btn-border-radius;
+    cursor: pointer;
+    // Анимация
+
+    transition: all 0.3s ease 0s;
+    &:hover,
+    &:focus,
+    &:visited,
+    &:active {
+      color: $btn-text-color-default;
+      text-decoration: none;
+      //Расскомментировать если кнопка вешается на <button>
+      // outline: none;
+    }
+    &:hover {
+      color: $btn-text-color-hover;
+
+      background-color: $btn-bg-hover;
+    }
+    &:active {
+      color: $btn-text-color-active;
+      text-decoration: none;
+
+      background-color: $btn-bg-active;
+      // Как пример использования тени
+      box-shadow: $btn-box-shadow;
+    }
+    @media ($mobile), ($md-400) {
+      display: block;
+
+      text-align: center;
+    }
+    @media ($mobile-landscape) {
+    }
+    @media ($tablet) {
+      flex-grow: 1;
+    }
+    @media ($laptop) {
+      min-width: 44%;
+    }
+    @media ($desktop) {
+    }
+    @media ($tv) {
+    }
+  }
+}
+
+input {
+  color: #000000;
+  font-weight: $regular;
+}
+
+input::placeholder {
+  color: $grey__dark-gray;
+  font-size: em(14px);
+  font-weight: $light;
+  letter-spacing: 0.7px;
+}
