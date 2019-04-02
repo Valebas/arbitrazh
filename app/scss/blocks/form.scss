@@ -45,6 +45,8 @@ $btn-comment-bg-default: black;
     margin-top: 30px;
   }
   @media ($desktop) {
+    margin-top: 44px;
+    width: 52%;
   }
   @media ($tv) {
   }
@@ -76,6 +78,7 @@ $btn-comment-bg-default: black;
       line-height: 20px;
     }
     @media ($desktop) {
+      width: 65%;
     }
     @media ($tv) {
     }
@@ -147,6 +150,7 @@ $btn-comment-bg-default: black;
       min-width: 44%;
     }
     @media ($desktop) {
+      min-width: 0;
     }
     @media ($tv) {
     }
@@ -163,4 +167,4 @@ input::placeholder {
   font-size: em(14px);
   font-weight: $light;
   letter-spacing: 0.7px;
-}
+}

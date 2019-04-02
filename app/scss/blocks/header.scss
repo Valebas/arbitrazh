@@ -39,6 +39,9 @@
     background-size: 550px;
   }
   @media ($desktop) {
+    background-position: 649px -15px;
+    // background-size: 775px;
+    background-size: 63%;
   }
   @media ($tv) {
   }
@@ -48,6 +51,9 @@
     }
     @media ($tablet) {
       padding: 20px 0 0 6px;
+    }
+    @media ($desktop) {
+      margin-left: -90px;
     }
   }
   &__text {
@@ -81,6 +87,10 @@
       max-width: 480px;
     }
     @media ($desktop) {
+      padding-top: 35px;
+      // padding-left: 90px;
+
+      max-width: 900px;
     }
     @media ($tv) {
     }
@@ -96,7 +106,6 @@
       margin-top: 6px;
 
       color: $white;
-      font-size: em(40px);
       font-weight: $regular;
       line-height: 52px;
       letter-spacing: 2px;
@@ -116,6 +125,10 @@
         line-height: em(25px) + em(2px);
       }
       @media ($desktop) {
+        font-size: em(40px);
+        line-height: 52px;
+        letter-spacing: 1.5px;
+        max-width: 567px;
       }
       @media ($tv) {
       }
@@ -144,6 +157,7 @@
         line-height: 25px;
       }
       @media ($desktop) {
+        margin-top: -13px;
       }
       @media ($tv) {
       }
@@ -155,6 +169,9 @@
         position: relative;
 
         font-weight: $bold;
+      }
+      @media ($desktop) {
+        left: -20px;
       }
     }
     &--quote-end {
@@ -169,4 +186,4 @@
       }
     }
   }
-}
+}
