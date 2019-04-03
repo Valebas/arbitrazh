@@ -39,11 +39,21 @@
     background-size: 550px;
   }
   @media ($desktop) {
-    background-position: 649px -15px;
+    background-position: 570px -15px;
     // background-size: 775px;
     background-size: 63%;
   }
+  @media ($md-1300) {
+    background-position: 625px -15px;
+    background-size: 63%;
+  }
   @media ($tv) {
+    // background-position: 649px -15px;
+    background-position: 131% 17%;
+    background-size: 856px;
+  }
+  @media ($gamer) {
+    background-position: 95% 0%;
   }
   &__logo {
     @media ($mobile), ($md-400) {
@@ -92,7 +102,7 @@
 
       max-width: 900px;
     }
-    @media ($tv) {
+    @media ($gamer) {
     }
     &--sub-text {
       color: $orange;
@@ -125,12 +135,14 @@
         line-height: em(25px) + em(2px);
       }
       @media ($desktop) {
+        max-width: 567px;
+
         font-size: em(40px);
         line-height: 52px;
         letter-spacing: 1.5px;
-        max-width: 567px;
       }
       @media ($tv) {
+        max-width: 567px;
       }
     }
     p {
@@ -159,7 +171,8 @@
       @media ($desktop) {
         margin-top: -13px;
       }
-      @media ($tv) {
+      @media ($gamer) {
+        margin-top: -2px;
       }
     }
     &--quote-start {

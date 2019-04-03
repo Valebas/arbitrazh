@@ -46,9 +46,14 @@ $btn-comment-bg-default: black;
   }
   @media ($desktop) {
     margin-top: 44px;
-    width: 52%;
+
+    width: 55%;
   }
   @media ($tv) {
+    width: 52%;
+  }
+  @media ($gamer) {
+    width: 43%;
   }
   &__input {
     display: flex;
@@ -150,9 +155,10 @@ $btn-comment-bg-default: black;
       min-width: 44%;
     }
     @media ($desktop) {
-      min-width: 0;
+      min-width: 40%;
     }
     @media ($tv) {
+      min-width: 0;
     }
   }
 }
@@ -167,4 +173,4 @@ input::placeholder {
   font-size: em(14px);
   font-weight: $light;
   letter-spacing: 0.7px;
-}
+}

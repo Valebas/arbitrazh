@@ -2307,16 +2307,16 @@ input::placeholder {
 @media (min-width: 1200px) {
   .form {
     margin-top: 44px;
-    width: 52%;
+    width: 55%;
   }
   .form__input {
     width: 65%;
   }
   .form__btn {
-    min-width: 0;
+    min-width: 40%;
   }
   .header {
-    background-position: 649px -15px;
+    background-position: 570px -15px;
     background-size: 63%;
   }
   .header__logo {
@@ -2327,10 +2327,10 @@ input::placeholder {
     max-width: 900px;
   }
   .header__text h1 {
+    max-width: 567px;
     font-size: 2.22222em;
     line-height: 52px;
     letter-spacing: 1.5px;
-    max-width: 567px;
   }
   .header__text p {
     margin-top: -13px;
@@ -2340,17 +2340,56 @@ input::placeholder {
   }
   .wrap__header {
     width: 90%;
-    max-width: 900px;
+    max-width: 1100px;
+  }
+  .wrap__header {
+    padding-left: 45px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .header {
+    background-position: 625px -15px;
+    background-size: 63%;
+  }
+}
+
+@media (min-width: 1360px) {
+  .form {
+    width: 52%;
+  }
+  .form__btn {
+    min-width: 0;
+  }
+  .header {
+    background-position: 131% 17%;
+    background-size: 856px;
+  }
+  .header__text h1 {
+    max-width: 567px;
+  }
+  .wrap__header {
+    width: 88%;
+    max-width: 1440px;
   }
   .wrap__header {
     padding-left: 90px;
   }
 }
 
-@media (min-width: 1360px) {
+@media (min-width: 1600px) {
+  .form {
+    width: 43%;
+  }
+  .header {
+    background-position: 95% 0%;
+  }
+  .header__text p {
+    margin-top: -2px;
+  }
   .wrap__header {
     width: 88%;
-    max-width: 1366px;
+    max-width: 1600px;
   }
 }
 

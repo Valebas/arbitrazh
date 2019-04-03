@@ -13,9 +13,10 @@
       align-items: flex-start;
     }
     @media ($desktop) {
-      padding-left: 90px;
+      padding-left: 45px;
     }
     @media ($tv) {
+      padding-left: 90px;
     }
   }
 }
