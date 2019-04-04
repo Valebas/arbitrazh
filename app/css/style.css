@@ -1965,11 +1965,101 @@ img {
   src: url("../fonts/Roboto-Black/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Black/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black/Roboto-Black.ttf") format("truetype");
 }
 
+.advantage {
+  display: inline-block;
+  margin-right: 156px;
+  padding-top: 174px;
+  vertical-align: top;
+}
+
+.advantage:last-child {
+  margin-right: 0;
+  margin-left: 7px;
+}
+
+.advantage--fast {
+  background: transparent url(../img/icons/i-asset-1.svg) no-repeat;
+  background-position: -2px 94px;
+}
+
+.advantage--skill {
+  background: transparent url(../img/icons/i-asset-2.svg) no-repeat;
+  background-position: 1px 104px;
+}
+
+.advantage--pay {
+  background: transparent url(../img/icons/i-asset-3.svg) no-repeat;
+  background-position: 1px 102px;
+}
+
+.advantage__title {
+  position: relative;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+.advantage__title--design-original::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: -111px;
+  width: 79px;
+  height: 2px;
+  background-color: #242930;
+}
+
+.advantage__title--design-original::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: -121px;
+  width: 111px;
+  height: 2px;
+  background-color: #242930;
+}
+
+.advantage__title--design-mirrored::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -144px;
+  width: 111px;
+  height: 2px;
+  background-color: #242930;
+}
+
+.advantage__title--design-mirrored::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: -146px;
+  width: 93px;
+  height: 2px;
+  background-color: #242930;
+}
+
+.advantage__text {
+  margin-top: -9px;
+  max-width: 206px;
+  color: #bdbdbd;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.9px;
+}
+
 body {
   color: #bdbdbd;
   font-size: 18px;
   font-family: "Roboto", Arial, sans-serif;
   line-height: em(24px);
+  background-color: #0b1119;
 }
 
 .form {
@@ -2118,14 +2208,24 @@ input::placeholder {
   margin: 0 auto;
 }
 
+.wrap__advantage {
+  margin: 0 auto;
+}
+
 @media (min-width: 320px) {
   .wrap__header {
+    width: 280px;
+  }
+  .wrap__advantage {
     width: 280px;
   }
 }
 
 @media (min-width: 399px) {
   .wrap__header {
+    width: 330px;
+  }
+  .wrap__advantage {
     width: 330px;
   }
 }
@@ -2178,6 +2278,10 @@ input::placeholder {
     width: 85%;
     max-width: 460px;
   }
+  .wrap__advantage {
+    width: 85%;
+    max-width: 460px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -2192,6 +2296,10 @@ input::placeholder {
 
 @media (min-width: 650px) {
   .wrap__header {
+    width: 84%;
+    max-width: 560px;
+  }
+  .wrap__advantage {
     width: 84%;
     max-width: 560px;
   }
@@ -2233,6 +2341,10 @@ input::placeholder {
     font-size: 0.88889em;
   }
   .wrap__header {
+    width: 90%;
+    max-width: 991px;
+  }
+  .wrap__advantage {
     width: 90%;
     max-width: 991px;
   }
@@ -2295,10 +2407,18 @@ input::placeholder {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .wrap__advantage {
+    width: 85%;
+    max-width: 800px;
+  }
 }
 
 @media (min-width: 1100px) {
   .wrap__header {
+    width: 85%;
+    max-width: 1100px;
+  }
+  .wrap__advantage {
     width: 85%;
     max-width: 1100px;
   }
@@ -2345,6 +2465,10 @@ input::placeholder {
   .wrap__header {
     padding-left: 45px;
   }
+  .wrap__advantage {
+    width: 90%;
+    max-width: 1100px;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -2375,6 +2499,13 @@ input::placeholder {
   .wrap__header {
     padding-left: 90px;
   }
+  .wrap__advantage {
+    width: 88%;
+    max-width: 1440px;
+  }
+  .wrap__advantage {
+    padding-left: 200px;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -2382,12 +2513,16 @@ input::placeholder {
     width: 43%;
   }
   .header {
-    background-position: 95% 0%;
+    background-position: 95% 0;
   }
   .header__text p {
     margin-top: -2px;
   }
   .wrap__header {
+    width: 88%;
+    max-width: 1600px;
+  }
+  .wrap__advantage {
     width: 88%;
     max-width: 1600px;
   }

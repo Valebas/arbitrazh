@@ -19,4 +19,20 @@
       padding-left: 90px;
     }
   }
+  &__advantage {
+    @include container;
+    @media ($mobile) {
+    }
+    @media ($mobile-landscape) {
+    }
+    @media ($tablet) {
+    }
+    @media ($laptop) {
+    }
+    @media ($desktop) {
+    }
+    @media ($tv) {
+      padding-left: 200px;
+    }
+  }
 }
