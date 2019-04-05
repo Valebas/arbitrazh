@@ -33,26 +33,31 @@
     background-size: 580px;
   }
   @media ($laptop) {
-    height: 100vh;
+    min-height: 550px;
 
     background-position: 500px 45px;
     background-size: 550px;
   }
-  @media ($desktop) {
+  @media ($laptop-large) {
     background-position: 570px -15px;
     // background-size: 775px;
     background-size: 63%;
+    padding-bottom: 100px;
   }
   @media ($md-1300) {
     background-position: 625px -15px;
     background-size: 63%;
   }
-  @media ($tv) {
+  @media ($desktop) {
     // background-position: 649px -15px;
-    background-position: 131% 17%;
+    // background-position: 131% 17%;
+    // костыль для изображения
+    min-height: 754px;
+
+    background-position: 131% -15px;
     background-size: 856px;
   }
-  @media ($gamer) {
+  @media ($gamer-pc) {
     background-position: 95% 0;
   }
   &__logo {
@@ -62,7 +67,7 @@
     @media ($tablet) {
       padding: 20px 0 0 6px;
     }
-    @media ($desktop) {
+    @media ($laptop-large) {
       margin-left: -90px;
     }
   }
@@ -96,13 +101,13 @@
 
       max-width: 480px;
     }
-    @media ($desktop) {
+    @media ($laptop-large) {
       padding-top: 35px;
       // padding-left: 90px;
 
       max-width: 900px;
     }
-    @media ($gamer) {
+    @media ($gamer-pc) {
     }
     &--sub-text {
       color: $orange;
@@ -134,14 +139,14 @@
         font-size: em(25px) + em(2px);
         line-height: em(25px) + em(2px);
       }
-      @media ($desktop) {
+      @media ($laptop-large) {
         max-width: 567px;
 
         font-size: em(40px);
         line-height: 52px;
         letter-spacing: 1.5px;
       }
-      @media ($tv) {
+      @media ($desktop) {
         max-width: 567px;
       }
     }
@@ -162,16 +167,16 @@
       @media ($mobile-landscape) {
       }
       @media ($tablet) {
-        font-size: em(16px);
+        font-size: $font-size-base - 2px;
       }
       @media ($laptop) {
         font-size: em(16px) + em(2px);
         line-height: 25px;
       }
-      @media ($desktop) {
+      @media ($laptop-large) {
         margin-top: -13px;
       }
-      @media ($gamer) {
+      @media ($gamer-pc) {
         margin-top: -2px;
       }
     }
@@ -183,7 +188,7 @@
 
         font-weight: $bold;
       }
-      @media ($desktop) {
+      @media ($laptop-large) {
         left: -20px;
       }
     }

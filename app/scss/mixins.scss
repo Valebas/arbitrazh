@@ -116,18 +116,22 @@
     width: 85%;
     max-width: 1100px;
   }
-  @media ($desktop) {
+  @media ($laptop-large) {
     width: 90%;
     // max-width: 900px;
     max-width: 1100px;
   }
-  @media ($tv) {
+  @media ($desktop) {
     width: 88%;
     max-width: 1440px;
   }
-  @media ($gamer) {
+  @media ($gamer-pc) {
     width: 88%;
-    max-width: 1600px;
+    max-width: 1500px;
+  }
+  @media ($tv) {
+    width: 88%;
+    max-width: 1800px;
   }
 }
 

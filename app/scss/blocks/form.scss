@@ -44,15 +44,15 @@ $btn-comment-bg-default: black;
     // align-items: stretch;
     margin-top: 30px;
   }
-  @media ($desktop) {
+  @media ($laptop-large) {
     margin-top: 44px;
 
     width: 55%;
   }
-  @media ($tv) {
+  @media ($desktop) {
     width: 52%;
   }
-  @media ($gamer) {
+  @media ($gamer-pc) {
     width: 43%;
   }
   &__input {
@@ -82,10 +82,10 @@ $btn-comment-bg-default: black;
     @media ($laptop) {
       line-height: 20px;
     }
-    @media ($desktop) {
+    @media ($laptop-large) {
       width: 65%;
     }
-    @media ($tv) {
+    @media ($desktop) {
     }
   }
   &__btn {
@@ -154,10 +154,10 @@ $btn-comment-bg-default: black;
     @media ($laptop) {
       min-width: 44%;
     }
-    @media ($desktop) {
+    @media ($laptop-large) {
       min-width: 40%;
     }
-    @media ($tv) {
+    @media ($desktop) {
       min-width: 0;
     }
   }
@@ -173,4 +173,4 @@ input::placeholder {
   font-size: em(14px);
   font-weight: $light;
   letter-spacing: 0.7px;
-}
+}
