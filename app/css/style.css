@@ -1976,13 +1976,13 @@ img {
 }
 
 .advantage--fast::before {
-  content: '';
+  content: "";
   position: absolute;
-  background: transparent url(../img/icons/i-asset-1.svg) no-repeat 0 0;
   top: -7px;
   left: -2px;
   width: 115px;
   height: 71px;
+  background: transparent url(../img/icons/i-asset-1.svg) no-repeat 0 0;
   background-size: contain;
 }
 
@@ -1991,14 +1991,14 @@ img {
 }
 
 .advantage--skill::before {
-  display: block;
-  content: '';
+  content: "";
   position: absolute;
-  background: transparent url(../img/icons/i-asset-2.svg) no-repeat 0 0;
   top: 3px;
-  left: 0px;
+  left: 0;
+  display: block;
   width: 68px;
   height: 61px;
+  background: transparent url(../img/icons/i-asset-2.svg) no-repeat 0 0;
   background-size: contain;
 }
 
@@ -2007,14 +2007,14 @@ img {
 }
 
 .advantage--pay::before {
-  display: block;
-  content: '';
+  content: "";
   position: absolute;
-  background: transparent url(../img/icons/i-asset-3.svg) no-repeat 0 0;
   top: 3px;
-  left: 0px;
+  left: 0;
+  display: block;
   width: 66px;
   height: 66px;
+  background: transparent url(../img/icons/i-asset-3.svg) no-repeat 0 0;
   background-size: contain;
 }
 
@@ -2036,6 +2036,58 @@ img {
   font-size: 18px;
   font-weight: 300;
   font-family: "Roboto", Arial, sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.9px;
+}
+
+.author__photo {
+  position: relative;
+  top: 103px;
+  z-index: 1;
+}
+
+.author__wrap {
+  margin: 0 auto;
+  position: relative;
+}
+
+.author__subtext {
+  color: #f99406;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto;
+  line-height: 25.89px;
+  /* Text style for "а, втор Ви" */
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px rgba(249, 148, 6, 0.59), 0 0 20px rgba(249, 148, 6, 0.59);
+}
+
+.author__title {
+  position: relative;
+  color: #ffffff;
+  font-size: 2.22222em;
+  font-weight: 400;
+  font-family: Roboto;
+  line-height: 52px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.author__bio {
+  color: #bdbdbd;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+}
+
+.author__quote {
+  color: #bdbdbd;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: Roboto;
   line-height: 24px;
   letter-spacing: 0.9px;
 }
@@ -2119,6 +2171,20 @@ input::-webkit-input-placeholder {
   letter-spacing: 0.7px;
 }
 
+input::-moz-placeholder {
+  color: #afafaf;
+  font-size: 0.77778em;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+}
+
+input:-ms-input-placeholder {
+  color: #afafaf;
+  font-size: 0.77778em;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+}
+
 input::-ms-input-placeholder {
   color: #afafaf;
   font-size: 0.77778em;
@@ -2149,7 +2215,7 @@ input::placeholder {
   font-weight: 300;
   line-height: 25.89px;
   letter-spacing: 1.4px;
-  text-shadow: 0 3px 27px rgba(249, 148, 6, 0.59);
+  text-shadow: 0 0 15px rgba(249, 148, 6, 0.59), 0 0 20px rgba(249, 148, 6, 0.59);
 }
 
 .header__text h1 {
@@ -2206,6 +2272,9 @@ input::placeholder {
 }
 
 @media (min-width: 320px) {
+  .author__wrap {
+    width: 280px;
+  }
   .wrap__header {
     width: 280px;
   }
@@ -2215,6 +2284,9 @@ input::placeholder {
 }
 
 @media (min-width: 399px) {
+  .author__wrap {
+    width: 330px;
+  }
   .wrap__header {
     width: 330px;
   }
@@ -2244,6 +2316,25 @@ input::placeholder {
     margin-bottom: 15px;
     padding-top: 70px;
     text-align: center;
+  }
+  .author__text {
+    margin-top: 122px;
+  }
+  .author__subtext {
+    line-height: 14px;
+  }
+  .author__title {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.9px;
+  }
+  .author__bio {
+    padding: 0 7px 20px 7px;
+  }
+  .author__quote {
+    margin: 0;
+    padding: 0 10px 65px;
+    font-size: 0.88889em;
   }
   .form__input {
     display: block;
@@ -2276,6 +2367,29 @@ input::placeholder {
   }
 }
 
+@media (max-width: 399px), (min-width: 400px), (min-width: 480px) {
+  .author {
+    position: relative;
+    overflow: hidden;
+    margin-top: -65px;
+    text-align: center;
+  }
+  .author::after {
+    content: "";
+    position: absolute;
+    top: 89px;
+    left: -105px;
+    width: 651px;
+    height: 653px;
+    background: transparent url(../img/light.png) no-repeat 0 0;
+    background-size: contain;
+  }
+  .author__wrap {
+    min-width: 293px;
+    border: 3px solid #f59f26;
+  }
+}
+
 @media (min-width: 400px) {
   .form {
     display: block;
@@ -2291,6 +2405,10 @@ input::placeholder {
 }
 
 @media (min-width: 480px) {
+  .author__wrap {
+    width: 85%;
+    max-width: 460px;
+  }
   .wrap__header {
     width: 85%;
     max-width: 460px;
@@ -2312,6 +2430,10 @@ input::placeholder {
 }
 
 @media (min-width: 650px) {
+  .author__wrap {
+    width: 84%;
+    max-width: 560px;
+  }
   .wrap__header {
     width: 84%;
     max-width: 560px;
@@ -2329,8 +2451,54 @@ input::placeholder {
   .advantage__text {
     font-size: 16px;
   }
-  .advantage__text {
-    font-size: 18px;
+  .author {
+    margin-top: -301px;
+    padding-left: 152px;
+  }
+  .author::after {
+    top: 184px;
+    left: 84px;
+  }
+  .author__photo {
+    top: 429px;
+    left: -45%;
+    width: 284px;
+  }
+  .author__wrap {
+    width: 90%;
+    max-width: 991px;
+  }
+  .author__wrap {
+    border: 3px solid #f59f26;
+    padding-top: 110px;
+  }
+  .author__wrap::before {
+    content: "";
+    position: absolute;
+    top: -125px;
+    left: 42px;
+    width: 100%;
+    height: 150%;
+    background: transparent url(../img/author@1x.jpg) no-repeat 0 0;
+    background-size: contain;
+  }
+  .author__text {
+    margin-top: 0;
+    padding: 0;
+    padding-left: 168px;
+    text-align: left;
+    padding-bottom: 150px;
+  }
+  .author__title {
+    font-size: 1.55556em;
+  }
+  .author__bio {
+    padding: 0;
+    padding-right: 70px;
+  }
+  .author__quote {
+    padding: 0;
+    padding-right: 15px;
   }
   .form {
     display: -webkit-box;
@@ -2397,6 +2565,10 @@ input::placeholder {
 }
 
 @media (min-width: 992px) {
+  .author__wrap {
+    width: 85%;
+    max-width: 800px;
+  }
   .form {
     margin-top: 30px;
   }
@@ -2444,11 +2616,15 @@ input::placeholder {
     max-width: 800px;
   }
   .wrap__advantage {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 
 @media (min-width: 1100px) {
+  .author__wrap {
+    width: 85%;
+    max-width: 1100px;
+  }
   .wrap__header {
     width: 85%;
     max-width: 1100px;
@@ -2466,7 +2642,7 @@ input::placeholder {
     background-size: 100%;
   }
   .advantage--skill::before {
-    top: 0px;
+    top: 0;
     left: 65px;
     background-size: 100%;
   }
@@ -2476,6 +2652,10 @@ input::placeholder {
     width: 66px;
     height: 70px;
     background-size: 100%;
+  }
+  .author__wrap {
+    width: 90%;
+    max-width: 1100px;
   }
   .form {
     margin-top: 44px;
@@ -2488,9 +2668,9 @@ input::placeholder {
     min-width: 40%;
   }
   .header {
+    padding-bottom: 100px;
     background-position: 570px -15px;
     background-size: 63%;
-    padding-bottom: 100px;
   }
   .header__logo {
     margin-left: -90px;
@@ -2538,7 +2718,7 @@ input::placeholder {
   }
   .advantage--skill::before {
     top: 2px;
-    left: 0px;
+    left: 0;
   }
   .advantage--pay::before {
     top: 1px;
@@ -2587,6 +2767,41 @@ input::placeholder {
     height: 2px;
     background-color: #242930;
   }
+  .author__wrap {
+    width: 88%;
+    max-width: 1440px;
+  }
+  .author__wrap {
+    border: 3px solid #f59f26;
+  }
+  .author__wrap::before {
+    content: "";
+    position: absolute;
+    top: -125px;
+    left: 42px;
+    width: 369px;
+    height: 476px;
+    background: transparent url(../img/author@1x.jpg) no-repeat 0 0;
+    background-size: contain;
+  }
+  .author__title {
+    position: relative;
+    color: #ffffff;
+    font-size: 2.22222em;
+    font-weight: 400;
+    font-family: Roboto;
+    line-height: 52px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .author__title::before {
+    content: "";
+    position: absolute;
+    width: 401px;
+    height: 2px;
+    background-color: white;
+    opacity: 0.1;
+  }
   .form {
     width: 52%;
   }
@@ -2622,6 +2837,10 @@ input::placeholder {
   .advantage {
     margin-right: 0;
   }
+  .author__wrap {
+    width: 88%;
+    max-width: 1500px;
+  }
   .form {
     width: 43%;
   }
@@ -2655,6 +2874,10 @@ input::placeholder {
     content: "";
     left: -225px;
   }
+  .author__wrap {
+    width: 88%;
+    max-width: 1800px;
+  }
   .wrap__header {
     width: 88%;
     max-width: 1800px;
@@ -2670,6 +2893,12 @@ input::placeholder {
 }
 
 @media (max-width: 399px) {
+  .advantage__title {
+    font-size: 16px;
+  }
+  .advantage__text {
+    font-size: 16px;
+  }
   .form {
     display: block;
     margin-top: 195px;

@@ -1,0 +1,220 @@
+.author {
+  @media ($mobile), ($md-400), ($mobile-landscape) {
+    position: relative;
+
+    overflow: hidden;
+
+    margin-top: -65px;
+
+    text-align: center;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 89px;
+      left: -105px;
+
+      width: 651px;
+      height: 653px;
+
+      background: transparent url(../img/light.png) no-repeat 0 0;
+      background-size: contain;
+    }
+  }
+  @media ($tablet) {
+    margin-top: -301px;
+    padding-left: 152px;
+    &::after {
+      top: 184px;
+      left: 84px;
+    }
+  }
+}
+
+.author__photo {
+  position: relative;
+  top: 103px;
+  z-index: 1;
+  @media ($tablet) {
+    top: 429px;
+    // left: -279px;
+    left: -45%;
+
+    width: 284px;
+  }
+}
+
+.author__wrap {
+  @include container();
+  position: relative;
+  @media ($mobile), ($md-400), ($mobile-landscape) {
+    min-width: 293px;
+
+    border: 3px solid #f59f26;
+  }
+  @media ($tablet) {
+    padding-top: 110px;
+    // padding-top: 100px;
+
+    border: 3px solid #f59f26;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -125px;
+      left: 42px;
+      // width: 688px;
+      // height: 675px;
+      // background-size: 50%;
+
+      width: 100%;
+      height: 150%;
+
+      background: transparent url(../img/author@1x.jpg) no-repeat 0 0;
+      background-size: contain;
+    }
+  }
+  @media ($laptop) {
+  }
+  @media ($laptop-large) {
+  }
+  @media ($desktop) {
+    // padding-top: 100px;
+    border: 3px solid #f59f26;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -125px;
+      left: 42px;
+      // width: 688px;
+      // height: 675px;
+      // background-size: 50%;
+
+      width: 369px;
+      height: 476px;
+
+      background: transparent url(../img/author@1x.jpg) no-repeat 0 0;
+      background-size: contain;
+    }
+  }
+  @media ($gamer-pc) {
+  }
+  @media ($tv) {
+  }
+}
+
+.author__text {
+  @media ($mobile), ($md-400) {
+    margin-top: 122px;
+  }
+  @media ($tablet) {
+    margin-top: 0;
+    padding: 0;
+    padding-bottom: 150px;
+    padding-left: 168px;
+
+    text-align: left;
+  }
+}
+
+.author__subtext {
+  color: #f99406;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto;
+  line-height: 25.89px;
+  /* Text style for "а, втор Ви" */
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px rgba(249, 148, 6, 0.59), 0 0 20px rgba(249, 148, 6, 0.59);
+  @media ($mobile), ($md-400) {
+    line-height: 14px;
+  }
+}
+
+.author__title {
+  position: relative;
+
+  color: #ffffff;
+  font-size: em(40px);
+  font-weight: 400;
+  font-family: Roboto;
+  line-height: 52px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  @media ($mobile), ($md-400) {
+    // margin-top: -5px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.9px;
+  }
+  @media ($mobile-landscape) {
+  }
+  @media ($tablet) {
+    font-size: em(28px);
+  }
+  @media ($laptop) {
+  }
+  @media ($laptop-large) {
+  }
+  @media ($desktop) {
+    position: relative;
+
+    color: #ffffff;
+    font-size: em(40px);
+    font-weight: 400;
+    font-family: Roboto;
+    line-height: 52px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    &::before {
+      content: "";
+      position: absolute;
+
+      width: 401px;
+      height: 2px;
+
+      background-color: white;
+      opacity: 0.1;
+    }
+  }
+  @media ($gamer-pc) {
+  }
+  @media ($tv) {
+  }
+}
+
+.author__bio {
+  color: #bdbdbd;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  @media ($mobile), ($md-400) {
+    padding: 0 7px 20px 7px;
+  }
+  @media ($tablet) {
+    padding: 0;
+    padding-right: 70px;
+  }
+}
+
+.author__quote {
+  color: #bdbdbd;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: Roboto;
+  line-height: 24px;
+  letter-spacing: 0.9px;
+  @media ($mobile), ($md-400) {
+    margin: 0;
+    // padding-top: 10px;
+    padding: 0 10px 65px;
+    // min-width: 246px;
+
+    font-size: em(16px);
+  }
+  @media ($tablet) {
+    padding: 0;
+    padding-right: 15px;
+  }
+}
